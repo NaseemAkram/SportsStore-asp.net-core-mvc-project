@@ -3,12 +3,12 @@
     public class EFStoreRepository : IStoreRepository
     {
         private StoreDbContext context;
+
         public EFStoreRepository(StoreDbContext ctx)
         {
             context = ctx;
         }
 
-
-        public IQueryable<Product> products => context.Products;
+        public IQueryable<Product> Products => context.Products;
     }
 }

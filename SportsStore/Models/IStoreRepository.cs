@@ -2,6 +2,6 @@
 {
     public interface IStoreRepository
     {
-        IQueryable<Product> products { get; }
+        IQueryable<Product> Products { get; }
     }
 }
